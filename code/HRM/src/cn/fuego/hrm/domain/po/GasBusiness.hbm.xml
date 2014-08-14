@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+ 
+	
+<hibernate-mapping
+	package="cn.fuego.hrm.domain.po">
+	<class name="GasBusiness" table="hrm_gas_business" >
+	
+		<composite-id>
+          
+            <key-property name="gasID" column="GAS_ID"></key-property>
+            <key-property name="dateMonth" column="DATE_MONTH" ></key-property>
+        </composite-id>
+           <property name="cardProportion" column="CARD_PROPORTION"  not-null="true" ></property>
+           <property name="oilSalesVolume" column="OIL_SALES_VOLUME"  not-null="false" ></property>
+           <property name="commoditySalesVoluem" column="COMMODITY_SALES_VOLUME"  not-null="false" ></property>
+	</class>
+</hibernate-mapping>
+
+
