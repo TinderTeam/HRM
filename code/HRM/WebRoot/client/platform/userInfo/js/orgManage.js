@@ -16,7 +16,7 @@
 					url: "orgManage!searchUserByID.action", 
 					dataType:"html",
 					data:{
-						orgID:id,
+						orgID:id
 					},
 					success: function (str) { 
 						var obj = eval ("(" + str + ")");
@@ -48,7 +48,7 @@
 					url: "orgManage!searchOrgInfoByID.action", 
 					dataType:"html",
 					data:{
-						orgID:id,
+						orgID:id
 					},
 					success: function (str) { 
 						var obj = eval ("(" + str + ")");
@@ -85,7 +85,7 @@
 				url: "orgManage!orgNameVerification.action", 
 				dataType:"html",
 				data:{
-					newOrgName:newName,
+					newOrgName:newName
 				},
 				success: function (str) { 
 					
@@ -118,7 +118,7 @@
 				url: "orgManage!deleteSubOrg.action", 
 				dataType:"html",
 				data:{
-					deleteOrg:deleteOrg,
+					deleteOrg:deleteOrg
 				},
 				success: function (str) { 
 					window.location.href="orgManage.action";
@@ -143,7 +143,7 @@
 				data:{
 					orgID:orgID,
 					newName:newName,
-					dept:dept,
+					dept:dept
 				},
 				success: function (str) { 
 					window.location.href="orgManage.action";

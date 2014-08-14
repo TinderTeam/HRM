@@ -49,7 +49,9 @@ public class LoginAction extends MISPAction
 	       
 	     try
 	     {
-	    	 if(session.get(SessionAttrNameConst.LOGIN_USER)!=null){
+	    	 if(session.get(SessionAttrNameConst.LOGIN_USER)!=null)
+	    	 {
+	    		 
  	    		 return SUCCESS;
 	    	 }
 	    	 	    	 

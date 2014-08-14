@@ -76,7 +76,7 @@
 				dataType:"html",
 				
 				data:{
-					groupName:searchGroupValue,
+					groupName:searchGroupValue
 				},
 				success: function (str) { 
 								

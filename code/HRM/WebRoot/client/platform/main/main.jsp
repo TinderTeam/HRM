@@ -22,10 +22,12 @@
 <!----内容栏--->
 	<div id="content">
 		  <div id="content-header">
-			<h1>${page_pageName}</h1>
+			<h1>主页</h1>
 		  </div>
 		  <!---面包屑导航---->
-		  <jsp:include page="../cbb/bread.jsp"/>
+		  <div id="breadcrumb">				
+				<a href="#" title="主页" class="tip-bottom"><i class="icon-home"></i>主页</a>
+ 		  </div>
 		  <!---End 面包屑导航---->
 		  <!----内容页---->
 		  <div class="container-fluid">

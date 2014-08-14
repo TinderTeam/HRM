@@ -91,7 +91,11 @@ public class MISPAction extends ActionSupport
 			}
 			if(!ValidatorUtil.isEmpty(e.getChildMenuList()) )
 			{	
-				return getMenuByMenuID(menuID,e.getChildMenuList());
+				MenuModel m= getMenuByMenuID(menuID,e.getChildMenuList());		
+				if(m!=null)
+				{
+					return m;
+				}
 			}
  
 		}
