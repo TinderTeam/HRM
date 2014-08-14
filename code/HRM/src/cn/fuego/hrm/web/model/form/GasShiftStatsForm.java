@@ -1,4 +1,4 @@
-package cn.fuego.hrm.web.struts.model.form;
+package cn.fuego.hrm.web.model.form;
 
 /**
  * 加油站统计参数

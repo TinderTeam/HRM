@@ -61,9 +61,9 @@
  
  	<package name="shift" extends="default">
  	    <action name="shift" class="cn.fuego.hrm.web.action.ShiftAction">
-			<result type="dispatcher">/client/platform/userInfo/userManage.jsp</result>
-            <result name="showUser" type="dispatcher">/client/platform/userInfo/userInfo.jsp</result>
+			<result type="dispatcher">/client/shift/shiftApproveSearch.jsp</result>      
 		</action>
  	</package>
+ 	
 </struts>
 
