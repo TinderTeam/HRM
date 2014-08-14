@@ -31,21 +31,15 @@
 			<result type="dispatcher">/client/platform/main/main.jsp</result>
 			<result type="dispatcher" name="LoginFailed">/client/platform/login/login.jsp</result>		    
 		</action>
-		
-
-		
+	
 		<action name="ajaxDownloadDebug" class="cn.fuego.misp.web.action.debug.AjaxDownDebugAction">
 			<result type="dispatcher">/client/platform/debug/ajaxdown.jsp</result> 
 		</action>
 
-
-		
-		
 		<action name="orgManage" class="cn.fuego.misp.web.action.user.OrgManageAction">
 			<result type="dispatcher">/client/platform/userInfo/orgManage.jsp</result> 
 		</action>
 		
-
  	</package>
  	
  	<package name="user" extends="default">
@@ -65,5 +59,11 @@
  	</package>
  	
  
+ 	<package name="shift" extends="default">
+ 	    <action name="shift" class="cn.fuego.hrm.web.action.ShiftAction">
+			<result type="dispatcher">/client/platform/userInfo/userManage.jsp</result>
+            <result name="showUser" type="dispatcher">/client/platform/userInfo/userInfo.jsp</result>
+		</action>
+ 	</package>
 </struts>
 
