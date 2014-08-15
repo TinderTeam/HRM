@@ -104,5 +104,16 @@ public class ShiftForm
 	{
 		this.avgEmploteesPerDay = avgEmploteesPerDay;
 	}
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString()
+	{
+		return "ShiftForm [shiftID=" + shiftID + ", shiftName=" + shiftName
+				+ ", shiftTimeList=" + shiftTimeList + ", shiftTimeString="
+				+ shiftTimeString + ", workingHours=" + workingHours
+				+ ", avgEmploteesPerDay=" + avgEmploteesPerDay + "]";
+	}
 
 }

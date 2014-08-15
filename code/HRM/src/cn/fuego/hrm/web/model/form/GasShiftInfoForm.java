@@ -11,9 +11,9 @@ package cn.fuego.hrm.web.model.form;
 public class GasShiftInfoForm
 {
 	private String openTime; // 营业时段
-	private int openHours; // 营业时间长度
+	private int openHours =0; // 营业时间长度
 	private String shiftType; // 排班方式
-	private int employeesLimit; // 编制人数
+	private int employeesLimit = 0; // 编制人数
 	/**
 	 * @return the openTime
 	 */
@@ -69,6 +69,16 @@ public class GasShiftInfoForm
 	public void setEmployeesLimit(int employeesLimit)
 	{
 		this.employeesLimit = employeesLimit;
+	}
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString()
+	{
+		return "GasShiftInfoForm [openTime=" + openTime + ", openHours="
+				+ openHours + ", shiftType=" + shiftType + ", employeesLimit="
+				+ employeesLimit + "]";
 	}
 
 }

@@ -3,6 +3,9 @@ package cn.fuego.hrm.web.action;
 import java.util.Map;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+
+import stub.cn.fuego.web.model.form.GasStationFormStub;
+
 import com.opensymphony.xwork2.ActionContext;
 import cn.fuego.hrm.service.ServiceContext;
 import cn.fuego.hrm.service.ShiftService;
@@ -40,11 +43,14 @@ public class ShiftAction  extends MISPAction
 		 ActionContext actionContext = ActionContext.getContext();
 	     Map<String, Object> session = actionContext.getSession();
 	    
+	    
 	     
+	     /*          
 		//check user
 	     UserModel user = (UserModel)session.get(SessionAttrNameConst.LOGIN_USER);
 
 	     pageModel= shiftService.shiftLogin(user);
+	     
 	     
 	     //Test
 	     pageModel=ShiftService.SHIFT_MODEL;
@@ -59,6 +65,11 @@ public class ShiftAction  extends MISPAction
 		 }else{
 			return ActionConstants.PERMISSION_LIMITED;
 		 }
+		 */
+	     
+	     gasStationForm = GasStationFormStub.getTestGasStationForm();
+	     log.debug(gasStationForm);
+	     return SUCCESS;
 	}
 
 	/**** get and set ****/

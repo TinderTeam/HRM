@@ -133,5 +133,17 @@ public class ShiftTblItemForm
 	{
 		this.restDays = restDays;
 	}
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString()
+	{
+		return "ShiftTblItemForm [name=" + name + ", post=" + post
+				+ ", shiftList=" + shiftList + ", workingHours=" + workingHours
+				+ ", holdyWorkingHours=" + holdyWorkingHours
+				+ ", overWorkingHours=" + overWorkingHours + ", workingDays="
+				+ workingDays + ", restDays=" + restDays + "]";
+	}
 
 }
