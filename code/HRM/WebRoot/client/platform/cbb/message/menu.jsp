@@ -7,8 +7,7 @@
 
 
 		<div id="sidebar">
-			
-			<jsp:include page="menucbb.jsp"/>
+			<jsp:include page="../menucbb.jsp"/>
 		</div>
 	
 	

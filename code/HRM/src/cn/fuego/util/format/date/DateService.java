@@ -133,6 +133,20 @@ public class DateService {
 		return dayNum;
        
 	}
+
+	/**
+	 * 将 年月时间 字符串 转换为日期
+	 * @param dateMonth
+	 * 如 "2013-4"
+	 * @return date
+	 * 转换为天为1日的日期如 2013-4-1
+	 * 
+	 */
+	public static Date dateMonthStrToDate(String dateMonth)
+	{
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
 	
 }

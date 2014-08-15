@@ -137,5 +137,12 @@ public class OrgManageServiceImpl implements OrgManageService
 		return orgModel;
 	}
 
+	@Override
+	public String getOrgByUserID(String userID)
+	{
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 
 }
