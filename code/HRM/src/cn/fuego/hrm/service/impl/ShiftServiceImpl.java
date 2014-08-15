@@ -1,16 +1,18 @@
 package cn.fuego.hrm.service.impl;
 
+<<<<<<< HEAD
 import java.util.List;
 
+=======
+>>>>>>> origin/dev
 import cn.fuego.hrm.service.ShiftService;
-import cn.fuego.hrm.web.model.form.GasStationForm;
 import cn.fuego.misp.domain.po.SystemUser;
-import cn.fuego.misp.web.model.user.UserModel;
 
 public class ShiftServiceImpl implements ShiftService
 {
 
 	@Override
+<<<<<<< HEAD
 	public String shiftLogin(UserModel user, String orgID)
 	{
 		// TODO Auto-generated method stub
@@ -33,9 +35,12 @@ public class ShiftServiceImpl implements ShiftService
 
 	@Override
 	public List<String> getShiftTypeList()
+=======
+	public boolean shiftLogin(SystemUser user)
+>>>>>>> origin/dev
 	{
 		// TODO Auto-generated method stub
-		return null;
+		return true;
 	}
 
 	@Override

@@ -78,8 +78,8 @@
 
 								<td style="text-align:center"><s:textfield name="gasStationName" value="%{GasStationForm.gasStationName}" readonly="true" class="span12"></s:textfield></td>
 								<td style="text-align:center"><s:textfield name="businessDept" value="%{GasStationForm.businessDept}" readonly="true" class="span12"></s:textfield></td>								
-								<td style="text-align:center"><s:textfield name="openHours" value="%{GasStationInfoForm.openHours}" readonly="true" class="span12"></s:textfield></td>
-								<td style="text-align:center"><s:textfield name="openTime" value="%{GasStationInfoForm.openTime}" readonly="true" class="span12"></s:textfield></td>
+								<td style="text-align:center"><s:textfield name="openHours" value="%{GasStationForm.GasStationInfoForm.openHours}" readonly="false" class="span12"></s:textfield></td>
+								<td style="text-align:center"><s:textfield name="openTime" value="%{GasStationForm.GasStationInfoForm.openTime}" readonly="false" class="span12"></s:textfield></td>
 							</tr>
 						</tbody>
   
@@ -110,9 +110,9 @@
 										
 									
 								  </td>
-								<td style="text-align:center"><s:textfield name="cardProportion" value="%{GasBusinessForm.cardProportion}" readonly="true" class="span12"></s:textfield></td>
-								<td style="text-align:center"><s:textfield name="oilSalesVolume" value="%{GasBusinessForm.oilSalesVolume}" readonly="true" class="span12"></s:textfield></td>
-								<td style="text-align:center"><s:textfield name="commoditySalesVolume" value="%{GasBusinessForm.commoditySalesVolume}" readonly="true" class="span12"></s:textfield></td>	
+								<td style="text-align:center"><s:textfield name="cardProportion" value="%{GasStationForm.GasBusinessForm.cardProportion}" readonly="false" class="span12"></s:textfield></td>
+								<td style="text-align:center"><s:textfield name="oilSalesVolume" value="%{GasStationForm.GasBusinessForm.oilSalesVolume}" readonly="false" class="span12"></s:textfield></td>
+								<td style="text-align:center"><s:textfield name="commoditySalesVolume" value="%{GasStationForm.GasBusinessForm.commoditySalesVolume}" readonly="false" class="span12"></s:textfield></td>	
 							
 							</tr>
 						</tbody>
@@ -128,10 +128,10 @@
 						</thead>
 						<tbody>
 							<tr>
-								<td style="text-align:center"><s:textfield name="employeesLimit" value="%{GasShiftInfoForm.employeesLimit}" readonly="true" class="span12"></s:textfield></td>
-								<td style="text-align:center"><s:textfield name="employeesNum" value="%{GasShiftStatsForm.employeesNum}" readonly="true" class="span12"></s:textfield></td>
-								<td style="text-align:center"><s:textfield name="avgRestEmployeesPerDay" value="%{GasShiftStatsForm.avgRestEmployeesPerDay}" readonly="true" class="span12"></s:textfield></td>
-								<td style="text-align:center"><s:textfield name="avgRestDaysPerMonth" value="%{GasShiftStatsForm.avgRestDaysPerMonth}" readonly="true" class="span12"></s:textfield></td>	
+								<td style="text-align:center"><s:textfield name="employeesLimit" value="%{GasStationForm.GasShiftInfoForm.employeesLimit}" readonly="false" class="span12"></s:textfield></td>
+								<td style="text-align:center"><s:textfield name="employeesNum" value="%{GasStationForm.GasShiftStatsForm.employeesNum}" readonly="false" class="span12"></s:textfield></td>
+								<td style="text-align:center"><s:textfield name="avgRestEmployeesPerDay" value="%{GasStationForm.GasShiftStatsForm.avgRestEmployeesPerDay}" readonly="false" class="span12"></s:textfield></td>
+								<td style="text-align:center"><s:textfield name="avgRestDaysPerMonth" value="%{GasStationForm.GasShiftStatsForm.avgRestDaysPerMonth}" readonly="false" class="span12"></s:textfield></td>	
 							
 							</tr>
 						</tbody>
@@ -193,11 +193,11 @@
 						<tr >
 						<td style="text-align:center"><s:property value="i.classNumber"/> </td>
 						<td style="text-align:center"><s:property value="i.className"/> </td>
-						<td style="text-align:center"><s:property value="i.startTime"/> </td>
-						</span>
-						<font face="Microsoft YaHei" size=3>-</font>
+						<td style="text-align:center"><s:property value="i.startTime"/>
 						<span>
-						<td style="text-align:center"><s:property value="i.endTime"/> </td>
+						<font face="Microsoft YaHei" size=3>-</font>
+						</span>
+						<s:property value="i.endTime"/> </td>
 						<td style="text-align:center"><s:property value="i.timeSegment"/> </td>
 						<td style="text-align:center"><s:property value="i.restAmount"/> </td>
 						<td style="text-align:center">

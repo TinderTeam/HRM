@@ -1,5 +1,6 @@
 package cn.fuego.hrm.web.action;
 
+<<<<<<< HEAD
 import java.util.List;
 import java.util.Map;
 import org.apache.commons.logging.Log;
@@ -12,17 +13,21 @@ import com.opensymphony.xwork2.ActionContext;
 import cn.fuego.hrm.service.ServiceContext;
 import cn.fuego.hrm.service.ShiftService;
 import cn.fuego.hrm.web.constant.ActionConstants;
+=======
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+
+>>>>>>> origin/dev
 import cn.fuego.hrm.web.model.form.GasStationForm;
-import cn.fuego.misp.domain.po.SystemUser;
-import cn.fuego.misp.service.OrgManageService;
 import cn.fuego.misp.web.action.basic.MISPAction;
-import cn.fuego.misp.web.constant.SessionAttrNameConst;
-import cn.fuego.misp.web.model.user.UserModel;
-import cn.fuego.util.format.date.DateService;
 
 public class ShiftAction  extends MISPAction
 {
+	/**
+	 * 
+	 */
 	private static final long serialVersionUID = 2019491290108017482L;
+<<<<<<< HEAD
 	private Log log = LogFactory.getLog(ShiftAction.class);	
 	//Result
 	private String nextPage=SUCCESS;
@@ -37,9 +42,18 @@ public class ShiftAction  extends MISPAction
 	private String dateMonth;
 	private String orgID;
 	
+=======
+
+	/**
+	 * 
+	 */
+>>>>>>> origin/dev
+	
+
+	private Log log = LogFactory.getLog(ShiftAction.class);
 	
 	
-	
+<<<<<<< HEAD
 	/*
 	 * 加载与显示
 	 * (non-Javadoc)
@@ -102,6 +116,17 @@ public class ShiftAction  extends MISPAction
 
 	
 	
+=======
+	private GasStationForm gasStationForm;
+	
+	public String execute()
+	{   
+		//load page;s
+		return SUCCESS;
+	}
+
+	
+>>>>>>> origin/dev
 	/**** get and set ****/
 	public void setGasStationForm(GasStationForm gasStationForm)
 	{
@@ -113,6 +138,7 @@ public class ShiftAction  extends MISPAction
 		return gasStationForm;
 	}
 
+<<<<<<< HEAD
 
 	public void setDateMonth(String dateMonth)
 	{
@@ -229,6 +255,8 @@ public class ShiftAction  extends MISPAction
 		return serialVersionUID;
 	}
 
+=======
+>>>>>>> origin/dev
 	
 
 
