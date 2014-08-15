@@ -1,21 +1,21 @@
 package cn.fuego.hrm.service;
 
-<<<<<<< HEAD
 import java.util.Date;
 import java.util.List;
 
 import cn.fuego.hrm.web.model.form.GasStationForm;
-=======
->>>>>>> origin/dev
 import cn.fuego.misp.domain.po.SystemUser;
+import cn.fuego.misp.web.model.user.UserModel;
 
 public interface  ShiftService
 {
+	public static final String SHIFT_MODEL = "shift" ;
+	public static final String SEARCH_MODEL = "search" ;
+	public static final String APPROVE_MODEL = "approve" ;
 	/**
 	 * 排班服务账户验证
 	 * @param  user
 	 * SystemUser 登录用户 
-<<<<<<< HEAD
 	 * @param orgID 
 	 * @return String
 	 * 用户模式
@@ -60,9 +60,4 @@ public interface  ShiftService
 	 */
 	public GasStationForm createShift(String dateMonth, String orgID);
 
-=======
-	 * @return true/false
-	 */
-	public boolean shiftLogin(SystemUser user);
->>>>>>> origin/dev
 }
