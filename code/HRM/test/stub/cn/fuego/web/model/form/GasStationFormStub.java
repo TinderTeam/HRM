@@ -14,7 +14,8 @@ public class GasStationFormStub
 			gasStationForm.setGasBusinessForm(GasBusinessFormStub.getTestGasBusinessForm());
 			gasStationForm.setGasShiftInfoForm(GasShiftInfoFormStub.getTestGasShiftInfoForm());
 			gasStationForm.setGasShiftStatsForm(GasShiftStatsFormStub.getTestGasShiftStatsForm());
-			gasStationForm.setShiftForm(ShiftFormStub.getTestShiftForm());
+			gasStationForm.setShiftForm(ShiftFormStub.getTestShiftFormList());
+			gasStationForm.setShiftTblItemForm(ShiftTblItemFormStub.getTestShiftTblItemList());
 			return gasStationForm;
 		}
 }

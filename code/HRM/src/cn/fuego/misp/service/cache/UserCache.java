@@ -26,6 +26,7 @@ import cn.fuego.misp.service.exception.ServiceException;
 import cn.fuego.misp.service.exception.msg.ExceptionMsg;
 import cn.fuego.misp.util.validate.ValidatorUtil;
 import cn.fuego.misp.web.model.common.AttributeModel;
+import cn.fuego.misp.web.model.group.UserGroupModel;
 import cn.fuego.misp.web.model.user.UserFilterModel;
 import cn.fuego.misp.web.model.user.UserModel;
 
@@ -69,7 +70,6 @@ public class UserCache
 		cache = new HashMap<String, UserModel>();
 		List<SystemUser> userList = DaoContext.getInstance().getSystemUserDao().getByFilter(null, null);
 		List<UserExtAttr> extAtrrList = DaoContext.getInstance().getUserExtAttrDao().getByFilter(null,null);
- 
 		
 		if (null == userList)
 		{
@@ -82,10 +82,12 @@ public class UserCache
 			user.setUserID(basicUser.getUserID());
 			user.setPassword(basicUser.getPassword());
 			user.setAttrList((getUserAttrByUserID(basicUser.getUserID(), extAtrrList)));
+			user.setUserFuctionList(DaoContext.getInstance().getUserFunctionViewDao().getFunctionByUserID(user.getUserID()));
 			cache.put(user.getUserID(), user);
 		}
 	}
 	
+
 	public List<UserModel> getUserListByFilter(UserFilterModel userFilter)
 	{
 		List<UserModel> userModelList = new ArrayList<UserModel>();

@@ -4,5 +4,5 @@ import cn.fuego.misp.web.model.user.UserModel;
 
 public interface LoginService
 {
-	public void userLogin(UserModel user);
+	public UserModel userLogin(UserModel user);
 }

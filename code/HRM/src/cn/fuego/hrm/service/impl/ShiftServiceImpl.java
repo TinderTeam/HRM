@@ -1,6 +1,6 @@
 package cn.fuego.hrm.service.impl;
 
-import java.util.Date;
+import java.util.List;
 
 import cn.fuego.hrm.service.ShiftService;
 import cn.fuego.hrm.web.model.form.GasStationForm;
@@ -11,16 +11,14 @@ public class ShiftServiceImpl implements ShiftService
 {
 
 	@Override
-	public GasStationForm getGasStationShiftByGasStationAndDate(String orgID,
-			Date dateMonth)
+	public String shiftLogin(UserModel user, String orgID)
 	{
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public GasStationForm searchGasStationShiftByGasStationAndDate(
-			String orgID, Date dateMonthStrToDate)
+	public GasStationForm getShiftByDateAndOrg(String date, String org)
 	{
 		// TODO Auto-generated method stub
 		return null;
@@ -34,10 +32,18 @@ public class ShiftServiceImpl implements ShiftService
 	}
 
 	@Override
-	public String shiftLogin(UserModel user)
+	public List<String> getShiftTypeList()
 	{
 		// TODO Auto-generated method stub
 		return null;
 	}
+
+	@Override
+	public GasStationForm createShift(String dateMonth, String orgID)
+	{
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 
 }

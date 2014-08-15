@@ -7,6 +7,7 @@ import cn.fuego.misp.dao.impl.SystemMenuDaoImpl;
 import cn.fuego.misp.dao.impl.SystemMetaDataDaoImpl;
 import cn.fuego.misp.dao.impl.SystemUserDaoImpl;
 import cn.fuego.misp.dao.impl.UserExtAttrDaoImpl;
+import cn.fuego.misp.dao.impl.UserFunctionViewDaoImpl;
 import cn.fuego.misp.dao.impl.UserGroupDaoImpl;
 import cn.fuego.misp.dao.impl.UserGroupMapFunctionDaoImpl;
 import cn.fuego.misp.dao.impl.UserMapGroupDaoImpl;
@@ -35,7 +36,8 @@ public class DaoContext
 	
 	private UserMapGroupDao userMapGroupDao = null;
 
-
+	private UserFunctionViewDao userFuntionViewDao = null;
+	
 	
 
 	private DaoContext()
@@ -43,6 +45,15 @@ public class DaoContext
 
 	}
 
+	public synchronized UserFunctionViewDao getUserFunctionViewDao() 
+	{
+		if (null == userFuntionViewDao)
+		{
+			userFuntionViewDao = new UserFunctionViewDaoImpl();
+		}
+		return userFuntionViewDao;
+	}
+	
 	public static synchronized DaoContext getInstance()
 	{
 		if (null == instance)

@@ -22,7 +22,7 @@ public class LoginServiceImpl implements LoginService
 	Log log = LogFactory.getLog(LoginServiceImpl.class);
 
 	@Override
-	public void userLogin(UserModel user)
+	public UserModel userLogin(UserModel user)
 	{
 		// get targetUser
 		UserModel targetUser = UserCache.getInstance().getUserByUserID(user.getUserID());
@@ -40,7 +40,9 @@ public class LoginServiceImpl implements LoginService
 		}
 		else
 		{
+			
 			log.info("User Login : " + user.toString());
+			return targetUser;
 		}
 	}
 

@@ -61,7 +61,8 @@
  
  	<package name="shift" extends="default">
  	    <action name="shift" class="cn.fuego.hrm.web.action.ShiftAction">
-			<result type="dispatcher">/client/shift/shiftApproveSearch.jsp</result>      
+			<result type="dispatcher">/client/shift/shiftApproveSearch.jsp</result>    
+			<result type="dispatcher" name="SystemError">/client/common/systemError.jsp</result>    
 		</action>
  	</package>
  	

@@ -55,7 +55,7 @@ public class LoginAction extends MISPAction
 	    	 }
 	    	 	    	 
 	    	 //User Login
-	    	 ServiceContext.getInstance().getLoginService().userLogin(user);
+	    	 user=ServiceContext.getInstance().getLoginService().userLogin(user);
 	    	 //Loading MenuTree
 	    	 menuTreeItem= ServiceContext.getInstance().getUserManagerService().loadMenuTreeByUserID(user.getUserID());	    	 
 	     }catch(ServiceException ex)

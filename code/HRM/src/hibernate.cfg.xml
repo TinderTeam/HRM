@@ -34,7 +34,9 @@
 		resource="cn/fuego/misp/domain/po/UserGroupMapFunction.hbm.xml" />
 	<mapping resource="cn/fuego/misp/domain/po/SystemMenu.hbm.xml" />
 	<mapping resource="cn/fuego/misp/domain/po/Org.hbm.xml" />
-	<mapping resource="cn/fuego/hrm/domain/po/GasBusiness.hbm.xml"/>
+	<mapping resource="cn/fuego/hrm/domain/po/GasBusiness.hbm.xml" />
+	<mapping
+		resource="cn/fuego/misp/domain/view/UserFunctionView.hbm.xml" />
 
 
 

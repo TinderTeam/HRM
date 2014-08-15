@@ -10,6 +10,7 @@ package cn.fuego.misp.web.model.user;
 
 import java.util.List;
 
+import cn.fuego.misp.domain.view.UserFunctionView;
 import cn.fuego.misp.web.model.common.AttributeModel;
 import cn.fuego.misp.web.model.group.UserGroupModel;
 
@@ -27,7 +28,8 @@ public class UserModel
 	private String password;
 	private List<AttributeModel> attrList;
 	private List<UserGroupModel> userGroupList;
-
+	private List<UserFunctionView> userFuctionList;
+	
 	public String getUserID()
 	{
 		return userID;
@@ -64,6 +66,23 @@ public class UserModel
 	{
 		this.attrList = attrList;
 	}
- 
+
+	/**
+	 * @return the userFuctionList
+	 */
+	public List<UserFunctionView> getUserFuctionList()
+	{
+		return userFuctionList;
+	}
+
+	/**
+	 * @param userFuctionList the userFuctionList to set
+	 */
+	public void setUserFuctionList(List<UserFunctionView> userFuctionList)
+	{
+		this.userFuctionList = userFuctionList;
+	}
+
+
  
 }
