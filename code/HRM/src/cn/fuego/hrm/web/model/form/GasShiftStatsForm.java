@@ -55,5 +55,15 @@ public class GasShiftStatsForm
 	{
 		this.avgRestDaysPerMonth = avgRestDaysPerMonth;
 	}
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString()
+	{
+		return "GasShiftStatsForm [employeesNum=" + employeesNum
+				+ ", avgRestEmployeesPerDay=" + avgRestEmployeesPerDay
+				+ ", avgRestDaysPerMonth=" + avgRestDaysPerMonth + "]";
+	}
 
 }

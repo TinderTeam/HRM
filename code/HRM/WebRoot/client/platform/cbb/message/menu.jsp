@@ -7,7 +7,10 @@
 
 
 		<div id="sidebar">
+<<<<<<< HEAD
 			
+=======
+>>>>>>> origin/dev
 			<jsp:include page="../menucbb.jsp"/>
 		</div>
 	

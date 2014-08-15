@@ -30,6 +30,15 @@ public interface OrgManageService
 	public void modify(OrgModel orgModel);
 	
 	public void delete(String orgID);
+
+	/**
+	 * 通过UserID获取组织机构
+	 * @param userID 
+	 * 用户ID
+	 * @return orgID
+	 * 组织机构ID
+	 */
+	public String getOrgByUserID(String userID);
  
 
 }

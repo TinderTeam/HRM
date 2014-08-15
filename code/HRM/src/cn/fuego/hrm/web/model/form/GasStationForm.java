@@ -1,5 +1,8 @@
 package cn.fuego.hrm.web.model.form;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * 排班综合表单
 * @ClassName: GasStationForm 
@@ -12,11 +15,14 @@ public class GasStationForm
 {
 	private String gasStationName; 				// 加油站名称
 	private String businessDept; 				// 经管部名称
-	private GasBusinessForm gasBufinessForm;	//加油站经营数据
-	private GasShiftInfoForm gasShiftInfoForm;  //加油站排班信息表；
-	private GasShiftStatsForm gasShiftStatsForm;//加油站班次统计表
-	private ShiftForm shiftForm;				//加油站班次表
-	private ShiftTblItemForm shiftTblItemForm;	//加油站排班表
+	
+	private GasBusinessForm gasBusinessForm=new GasBusinessForm();	//加油站经营数据
+	private GasShiftInfoForm gasShiftInfoForm=new GasShiftInfoForm();  //加油站排班信息表
+	private GasShiftStatsForm gasShiftStatsForm=new GasShiftStatsForm();//加油站班次统计表
+	
+	private List<ShiftForm> shiftForm=new ArrayList<ShiftForm>();				//加油站班次表
+	private List<ShiftTblItemForm> shiftTblItemForm=new ArrayList<ShiftTblItemForm>();	//加油站排班表
+	
 	/**
 	 * @return the gasStationName
 	 */
@@ -48,16 +54,16 @@ public class GasStationForm
 	/**
 	 * @return the gasBufinessForm
 	 */
-	public GasBusinessForm getGasBufinessForm()
+	public GasBusinessForm getGasBusinessForm()
 	{
-		return gasBufinessForm;
+		return gasBusinessForm;
 	}
 	/**
 	 * @param gasBufinessForm the gasBufinessForm to set
 	 */
-	public void setGasBufinessForm(GasBusinessForm gasBufinessForm)
+	public void setGasBusinessForm(GasBusinessForm gasBufinessForm)
 	{
-		this.gasBufinessForm = gasBufinessForm;
+		this.gasBusinessForm = gasBufinessForm;
 	}
 	/**
 	 * @return the gasShiftInfoForm
@@ -90,31 +96,44 @@ public class GasStationForm
 	/**
 	 * @return the shiftForm
 	 */
-	public ShiftForm getShiftForm()
+	public List<ShiftForm> getShiftForm()
 	{
 		return shiftForm;
 	}
 	/**
 	 * @param shiftForm the shiftForm to set
 	 */
-	public void setShiftForm(ShiftForm shiftForm)
+	public void setShiftForm(List<ShiftForm> shiftForm)
 	{
 		this.shiftForm = shiftForm;
 	}
 	/**
 	 * @return the shiftTblItemForm
 	 */
-	public ShiftTblItemForm getShiftTblItemForm()
+	public List<ShiftTblItemForm> getShiftTblItemForm()
 	{
 		return shiftTblItemForm;
 	}
 	/**
 	 * @param shiftTblItemForm the shiftTblItemForm to set
 	 */
-	public void setShiftTblItemForm(ShiftTblItemForm shiftTblItemForm)
+	public void setShiftTblItemForm(List<ShiftTblItemForm> shiftTblItemForm)
 	{
 		this.shiftTblItemForm = shiftTblItemForm;
 	}
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString()
+	{
+		return "GasStationForm [gasStationName=" + gasStationName
+				+ ", businessDept=" + businessDept + ", gasBusinessForm="
+				+ gasBusinessForm + ", gasShiftInfoForm=" + gasShiftInfoForm
+				+ ", gasShiftStatsForm=" + gasShiftStatsForm + ", shiftForm="
+				+ shiftForm + ", shiftTblItemForm=" + shiftTblItemForm + "]";
+	}
+
 	
 
 
