@@ -175,6 +175,7 @@
 								</div>
 					<table class="table table-striped table-bordered table-hover table-condensed" id="shiftsInfo" >
 						<thead>
+
 							<tr >
 								<th style="width:30px">班号</th>
 								<th style="width:50px">班名称</th>
@@ -186,6 +187,27 @@
 							</tr>
 						</thead>
 						<tbody id="shiftTable">
+						
+						<!-- iterator标签进行数组遍历 -->
+						<s:iterator  var="i" value="shiftsInfoList">
+						<tr >
+						<td style="text-align:center"><s:property value="i.classNumber"/> </td>
+						<td style="text-align:center"><s:property value="i.className"/> </td>
+						<td style="text-align:center"><s:property value="i.startTime"/> </td>
+						</span>
+						<font face="Microsoft YaHei" size=3>-</font>
+						<span>
+						<td style="text-align:center"><s:property value="i.endTime"/> </td>
+						<td style="text-align:center"><s:property value="i.timeSegment"/> </td>
+						<td style="text-align:center"><s:property value="i.restAmount"/> </td>
+						<td style="text-align:center">
+																						
+						<span class="icon" ><a href="#editGroup" role="button"  title="编辑班次" class="tip-bottom" data-toggle="modal"><i class="icon-pencil"></i></a></span>
+						&nbsp&nbsp
+						<span class="icon" ><a class="tip-bottom" href="charts.html" title="删除班次"><i class="icon-remove"></i></a></span>
+						</td>
+						</tr>
+						</s:iterator>
 							<tr>
 								<td name="shiftType" style="text-align:center">A</td>
 								<td style="text-align:center">早班</td>
